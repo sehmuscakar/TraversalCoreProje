@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+
+@await Component.InvokeAsync("_SliderPartial")
+<!-- bu ismi sadece yazmak istorsan shared altında yer alan components in altındaki isme ulşır o yuntemi kullanacan ,ama dediğim yoldan değilde başka yoldan hareket ederseniz
+    hangi klasörse ve tanımladığın klaöre kadar uzun uzun isimlerini yazacan -->
+@await Component.InvokeAsync("_PopularDestinations")
+
+@await Component.InvokeAsync("_Statistics")
+
+@await Component.InvokeAsync("_Feature")
+
+@await Component.InvokeAsync("_SubAbout")
+
+@await Component.InvokeAsync("_Testimonial")
